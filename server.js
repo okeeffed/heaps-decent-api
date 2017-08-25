@@ -39,9 +39,11 @@ app.use(bodyParser.json({ type: '*/*' }));
 
 // Map routes to URL
 routes(app);
-
-
 graphql(app);
+
+const Untappd = require('./controllers/untappd');
+
+Untappd.fetch();
 
 
 // Server Setup
