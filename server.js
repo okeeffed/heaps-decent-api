@@ -41,9 +41,9 @@ app.use(bodyParser.json({ type: '*/*' }));
 routes(app);
 graphql(app);
 
-const Untappd = require('./controllers/untappd');
+const Vivino = require('./controllers/vivino');
 
-Untappd.fetch();
+Vivino.fetch();
 
 
 // Server Setup

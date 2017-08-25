@@ -1,6 +1,8 @@
 # Heaps Decent API
 
-An API that is... heaps... decent. Skrrt.
+Turn left. Skrrt. Turn right. Skrrt.
+
+Massive.
 
 ## Staging
 
