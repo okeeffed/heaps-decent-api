@@ -1,3 +1,4 @@
+require('dotenv').config;
 const Xray = require('x-ray');
 const util = require('util');
 
@@ -19,7 +20,7 @@ exports.fetch = function() {
 	}
 
 	return new Promise((resolve, reject) => {
-		x('https://untappd.com/user/okeeffe_d/beers', '.beer-item', {
+		x(process.env.UNTAPPD_URL, '.beer-item', {
 			beers: [
 				{
 					beer: 'div.beer-details > p.name > a.track-click',
