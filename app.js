@@ -41,13 +41,8 @@ app.use(bodyParser.json({ type: '*/*' }));
 routes(app);
 graphql(app);
 
-const Untappd = require('./controllers/untappd');
-
-Untappd.fetch();
-
-
 // Server Setup
-const port = process.env.PORT || 3090;
+const port = process.env.NODE_ENV == 'production' ? 80 : 3090;
 const server = http.createServer(app);
 server.listen(port);
 console.log('Server listening on:', port);

@@ -30,7 +30,8 @@ exports.fetch = function() {
 					abv: 'div.details > p.abv',
 					ibu: 'div.details > p.ibu',
 					dates: ['div.details > p.date > a > abbr'],
-					checkins: 'div.details > p.check-ins'
+					checkins: 'div.details > p.check-ins',
+					image: 'a.label > img@data-original'
 				}
 			]
 		})((err, data) => {
