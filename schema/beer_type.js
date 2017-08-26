@@ -22,7 +22,8 @@ const BeerType = new GraphQLObjectType({
 		my_rating: { type: GraphQLString },
 		global_rating: { type: GraphQLString },
 		first_checkin: { type: GraphQLString },
-		last_checkin: { type: GraphQLString }
+		last_checkin: { type: GraphQLString },
+		image: { type: GraphQLString }
 	})
 });
 
