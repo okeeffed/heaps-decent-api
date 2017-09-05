@@ -26,7 +26,7 @@
   "scripts": {
     "dev": "nodemon app.js",
     "start": "pm2 start app.js",
-    "now": "now --docker --alias heapsdecentapi",
+    "now": "now --docker -e NODE_ENV=production",
     "casper": "casperjs test ./test/casperjs/*.test.js",
     "mocha": "mocha --compilers js:babel-core/register --recursive ./test/mocha/*.js",
     "mocha:init": "mocha --compilers js:babel-core/register ./test/mocha/init.mocha.js",
