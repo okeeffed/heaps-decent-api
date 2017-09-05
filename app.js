@@ -18,8 +18,6 @@ const cors = require('cors');
 
 // Routes Setup
 const routes = require('./routes');
-
-
 const graphql = require('./routes/graphql');
 
 
@@ -29,13 +27,10 @@ app.use(morgan('combined'));
 app.use(cors());
 app.use(bodyParser.json({ type: '*/*' }));
 
-// var mongodb = require('./database/mongo_database');
-// var sqldb = require('./database/sql_database');
-// var seed = require('./seed');
-
-// view engine setup
-// app.set('views', path.join(__dirname, 'views'));
-// app.set('view engine', 'pug');
+// const Github = require('./controllers/github');
+// Github.fetch()
+// 	.then(res => console.log(res))
+// 	.catch(err => console.log(err.message));
 
 // Map routes to URL
 routes(app);
