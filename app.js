@@ -27,10 +27,15 @@ app.use(morgan('combined'));
 app.use(cors());
 app.use(bodyParser.json({ type: '*/*' }));
 
-// const Github = require('./controllers/github');
-// Github.fetch()
+// const Bitcoin = require('./controllers/bitcoinMagazine');
+// Bitcoin.fetch()
 // 	.then(res => console.log(res))
 // 	.catch(err => console.log(err.message));
+
+const Crypto = require('./controllers/crypto');
+Crypto.fetch()
+	.then(res => console.log(res))
+	.catch(err => console.log(err.message));
 
 // Map routes to URL
 routes(app);
